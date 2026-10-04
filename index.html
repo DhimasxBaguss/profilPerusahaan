@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lintang Teknologi - Profil Perusahaan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <span class="logo">Lintang Teknologi</span>
+  <div>
+    <a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#sejarah">Sejarah</a><a href="#tim">Tim</a><a href="#kontak">Kontak</a>
+    <button id="themeBtn" aria-label="Ganti tema" style="margin-left:20px">Mode gelap</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="canvas"></canvas>
+  <div class="hero-text">
+    <h1>Kami membangun software untuk <span id="typed"></span></h1>
+    <p>Studio teknologi di Bandung yang membantu bisnis lokal go digital sejak 2015.</p>
+    <a href="#kontak"><button class="primary">Mulai konsultasi</button></a>
+  </div>
+</header>
+
+<section id="tentang" class="reveal">
+  <h2>Tentang kami</h2>
+  <p class="lead">Lintang Teknologi adalah tim 24 orang yang merancang aplikasi web dan mobile untuk UMKM, sekolah, dan startup di Indonesia.</p>
+  <div class="stats">
+    <div class="stat"><b data-target="120">0</b>proyek selesai</div>
+    <div class="stat"><b data-target="45">0</b>klien aktif</div>
+    <div class="stat"><b data-target="24">0</b>anggota tim</div>
+    <div class="stat"><b data-target="11">0</b>tahun berdiri</div>
+  </div>
+</section>
+
+<section id="layanan" class="reveal">
+  <h2>Layanan</h2>
+  <p class="lead">Pilih salah satu untuk melihat detailnya.</p>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="panel" id="panel" role="tabpanel"></div>
+</section>
+
+<section id="sejarah" class="reveal">
+  <h2>Sejarah</h2>
+  <p class="lead">Klik tiap tahun untuk membuka ceritanya.</p>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="tim" class="reveal">
+  <h2>Tim inti</h2>
+  <div class="team" id="team"></div>
+</section>
+
+<section id="kontak" class="reveal">
+  <h2>Hubungi kami</h2>
+  <p class="lead">Ceritakan kebutuhan Anda. Kami balas dalam 1 hari kerja.</p>
+  <form id="form" novalidate>
+    <input id="nama" placeholder="Nama Anda" aria-label="Nama">
+    <input id="email" type="email" placeholder="Email" aria-label="Email">
+    <textarea id="pesan" rows="4" placeholder="Pesan" aria-label="Pesan"></textarea>
+    <button class="primary" type="submit">Kirim pesan</button>
+    <p class="msg" id="msg" role="status"></p>
+  </form>
+</section>
+
+<footer>&copy; 2026 Lintang Teknologi. Contoh perusahaan fiktif untuk belajar.</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
